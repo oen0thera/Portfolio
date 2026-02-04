@@ -1,0 +1,38 @@
+.banner{
+    height:20em;
+    display:flex;
+    gap:2em;
+    background-color: #202124;
+    transform:scaleX(150%);
+}
+.banner_item{
+    width:30%;
+    &.slide_in{
+        animation:slide_in 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &.slide_out{
+        animation:slide_out 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+   
+}
+
+
+
+@keyframes slide_in{
+    0%{
+        transform:translateX(50%);
+    }
+    100%{
+        transform:trnaslateX(-50%);
+    }
+}
+
+@keyframes slide_out{
+    0%{
+        transform:translateX(-50%);
+    }
+    100%{
+        transform:trnaslateX(50%);
+    }
+}

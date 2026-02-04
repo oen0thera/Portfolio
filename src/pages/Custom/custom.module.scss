@@ -1,0 +1,64 @@
+.preventGnbDrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  z-index: 200;
+  background: linear-gradient(135deg, #0000009a, #333333);
+}
+.stage_section {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  gap: 2em;
+  position: fixed;
+  z-index: 10;
+}
+.stage_components {
+  width: 100%;
+  background: linear-gradient(135deg, #2021249a, #333333);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1.2em;
+}
+.custom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.custom_section {
+  margin: 10em 5em;
+  height: 100%;
+  display: flex;
+  gap: 2em;
+}
+.custom_components {
+  width: 20em;
+  height: 50em;
+  background-color: rgb(71, 71, 71);
+  border-radius: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+.custom_canvas {
+  display: grid;
+  grid-template: 1fr 10fr 1fr/4em 10fr 4em;
+  grid-gap: 1em;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 50em;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+}

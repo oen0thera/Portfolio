@@ -1,0 +1,53 @@
+.screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.canvas {
+  width: 100%;
+  height: 45vh;
+  ::-webkit-scrollbar {
+    visibility: hidden;
+  }
+}
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  transition: 1s;
+  animation: fade-in 20s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  &.off {
+    opacity: 0;
+    animation: fade-out 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+section {
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

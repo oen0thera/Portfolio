@@ -1,0 +1,56 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  font-weight: 600;
+  box-sizing: border-box;
+  cursor: pointer;
+  &.xs {
+    width: 90px;
+    height: 25px;
+  }
+  &.sm {
+    width: 120px;
+    height: 32px;
+  }
+  &.lg {
+    width: 300px;
+    height: 50px;
+    font-size: 0.75em;
+  }
+  &.xl {
+    width: 100%;
+    height: 70px;
+    font-size: 1.2em;
+  }
+  &.google {
+    background-color: #f4f4f4;
+  }
+  &.kakao {
+    background-color: #ffe812;
+  }
+  &.naver {
+    background-color: #00c73c;
+  }
+  &.dark {
+    //background-color: #70707554;
+    background: linear-gradient(135deg, #7070750a, #33333300);
+    color: rgb(119, 117, 117);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: #39393d;
+      color: white;
+    }
+  }
+  &.default {
+    background-color: white;
+    box-shadow: 0 0px 8px 0px #00000052;
+  }
+}

@@ -1,0 +1,40 @@
+.custom_footer {
+  width: 100%;
+  font-size: 2em;
+  height: 2em;
+  border-radius: 10px;
+  border: 1px dashed rgb(71, 71, 71);
+  background-color: rgb(211, 208, 208);
+  position: relative;
+  word-break: break-word;
+  text-align: center;
+
+  &.bottom {
+    margin: 0 auto;
+    grid-row: 3;
+    grid-column: 2/3;
+  }
+  &.left {
+    width: 2em;
+    height: 100%;
+    grid-row: 1/4;
+    grid-column: 1;
+  }
+  &.right {
+    width: 2em;
+    height: 100%;
+    grid-row: 1/4;
+    grid-column: 3;
+  }
+
+  &.selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0;
+    padding: 0;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+  }
+}

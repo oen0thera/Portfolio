@@ -1,0 +1,39 @@
+.screen{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    gap:5em;
+    animation: fade-in 20s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.canvas{
+    width:100%;
+    height:50vh;
+}
+.title{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:10em;
+    color:white;
+    position:absolute;
+    z-index:20;
+    transition:1s;
+    
+    
+}
+
+section{
+    position:relative;
+    z-index:0;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }  
+}

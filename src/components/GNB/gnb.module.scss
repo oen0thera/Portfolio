@@ -1,0 +1,52 @@
+.gnb {
+  width:100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: #202124;
+  color: azure;
+  font-weight: 500;
+  padding: 0 2em;
+  box-sizing: border-box;
+  position:fixed;
+  z-index:100;
+  gap: 4em;
+}
+.gnb_bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  li{
+    cursor:pointer;
+  }
+}
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2em;
+  li{
+    a{
+        text-decoration: none;
+        color:inherit;
+      }
+    }
+  
+  
+  
+}
+.login_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  gap: 1em;
+  li{
+    a{
+        text-decoration: none;
+        color:inherit;
+      }
+    }
+}
